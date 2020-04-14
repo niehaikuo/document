@@ -22,15 +22,33 @@ git 公司账号，个人账号
 
 
 
+##### git  查看本地用户密码
+
 
 
 git clone 时，https和SSH 的区别？
 
 https 需要验证用户名和密码，而SSH需要先添加SSH key ，然后提交
 
+之所以不需要输入账号信息，是因为在git pull 或 git push 时输入过账号密码，已经将账号信息保存在windows的管理凭据中（可设置账号保存的时效）
 
 
-git，github,gitlab 之间的关系
+
+[Git 本地记住密码与清空密码](https://blog.csdn.net/s735819795/article/details/90376586)
+
+`` 记住密码 `` 
+
+``git config --global credential.helper wincred``
+
+
+
+``清空本地密码``
+
+``git credential-manager uninstall``
+
+
+
+## git，github,gitlab 之间的关系
 
 
 
